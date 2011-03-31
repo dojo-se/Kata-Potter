@@ -1,11 +1,11 @@
 import unittest
 
-def problema_para_resolver():
-    return True
+def book_calculator(basket):
+    return 0
 
-class ProblemaParaResolverTest(unittest.TestCase):
-    def test_simples(self):
-        self.assertEqual(True, problema_para_resolver())
+class Book_calculator(unittest.TestCase):
+    def test_empty_basket(self):
+        self.assertEqual(0, book_calculator(None))
 
 if __name__ == '__main__':
     unittest.main()
