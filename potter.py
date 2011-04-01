@@ -3,7 +3,8 @@ import unittest
 def book_calculator(basket):
     if basket == None:
         return 0
-    if basket['Book 1'] == 2:
+    values = [v for v in basket.values() if v > 1]
+    if values:
         return 16
 
     total = 8*(1.05 - 0.05*len(basket)) * len(basket)
